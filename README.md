@@ -26,6 +26,7 @@ This soley depends on your system hardware. For example, when run on an [Intel i
 
 - [Docker requirements](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md#Docker-requirements)
 - [GN build configuration](https://www.chromium.org/developers/gn-build-configuration)
+- [GN args template](https://source.chromium.org/chromium/chromium/src/+/main:build/args/headless.gn)
 
 ## Versioning
 
