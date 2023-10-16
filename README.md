@@ -8,10 +8,19 @@ This purpose of this build is to workaround AWS [Lambda](https://docs.aws.amazon
 
 - [Docker](https://www.docker.com/get-started)
 
+## System requirements
+
+- 40GB of free disk space
+- 8GB memory available
+
 ## Start the compilation process
 
     $ docker build -t chromium-headless .
     $ docker run -d -v $PWD:$PWD -w $PWD chromium-headless
+
+### Build time
+
+This soley depends on your system hardware. For example, when run on an [Intel i7](https://www.intel.com/content/www/us/en/products/details/processors/core/i7.html) with 32GB RAM the compilation process takes about 4 hours to complete.
 
 ## References
 
