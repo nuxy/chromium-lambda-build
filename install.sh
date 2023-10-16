@@ -7,8 +7,6 @@
 #   The build process requires 40GB of disk space and 8GB RAM
 #
 
-apt-get install -y curl git lsb-release sudo
-
 git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
 
 export PATH="$PWD/depot_tools:$PATH"
