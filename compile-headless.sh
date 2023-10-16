@@ -23,3 +23,8 @@ echo 'is_debug = false' >> out/Default/args.gn
 gn gen out/Default
 
 autoninja -C out/Default headless_shell
+
+cd out/Default && tar cfz "$PWD/dist/headless_shell.tar.gz" headless_shell
+
+echo 'Build complete'
+exit 0
