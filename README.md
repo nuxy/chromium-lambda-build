@@ -1,6 +1,6 @@
 # chromium-lambda-build
 
-Lambda supported [Chromium](https://opensource.google/projects/chromium) browser build (lightweight, headless shell). 
+Lambda supported [Chromium](https://opensource.google/projects/chromium) browser build (lightweight, headless shell).
 
 This purpose of this build is to workaround AWS [Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) container image [read-only restrictions](https://docs.aws.amazon.com/lambda/latest/dg/images-create.html#images-reqs).
 
@@ -20,7 +20,9 @@ This purpose of this build is to workaround AWS [Lambda](https://docs.aws.amazon
 
 ### Build time
 
-This soley depends on your system hardware. For example, when run on an [Intel i7](https://www.intel.com/content/www/us/en/products/details/processors/core/i7.html) with 32GB RAM the compilation process takes about 4 hours to complete.
+This soley depends on your network speed and system hardware.
+
+For example, when run on a fast network using a system running an [Intel i7](https://www.intel.com/content/www/us/en/products/details/processors/core/i7.html) with 32GB RAM the entire process takes about 4 hours to complete.  Moveover, this processing time can be further reduced by writing to an [SSD](https://en.wikipedia.org/wiki/Solid-state_drive) / [SSHD](https://en.wikipedia.org/wiki/Hybrid_drive) in conjunction with proper [sysctl](https://www.golinuxcloud.com/sysctl-config-for-high-performance-servers) tuning.
 
 ## References
 
