@@ -17,8 +17,15 @@ cd src && ./build/install-build-deps.sh --no-prompt && gclient runhooks
 
 mkdir -p out/Default
 
-echo 'import("//build/args/headless.gn")' > out/Default/args.gn
-echo 'is_debug = false' >> out/Default/args.gn
+cat << EOF > out/Default/args.gn
+import("//build/args/headless.gn")
+
+// Disable Lambda unsupported GPU features.
+angle_enable_swiftshader = false
+angle_enable_vulkan = false
+
+is_debug = false
+EOF
 
 gn gen out/Default
 
