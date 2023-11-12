@@ -16,7 +16,7 @@ This purpose of this build is to workaround AWS [Lambda](https://docs.aws.amazon
 ## Start the compilation process
 
     $ docker build -t chromium-headless .
-    $ docker run -d -v $PWD:$PWD -w $PWD chromium-headless
+    $ docker run -d -v "$PWD:$PWD" -w "$PWD" chromium-headless
 
 ### Build time
 
